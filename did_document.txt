@@ -1,0 +1,33 @@
+{
+    "@context": "https://www.w3.org/ns/did/v1",
+    "verificationMethod": [
+        {
+            "id": "did:web:did-web.godiddy.com:f06deae6-572f-4af5-bf13-4b5f622c1342#key-0",
+            "type": "JsonWebKey2020",
+            "controller": "did:web:did-web.godiddy.com:f06deae6-572f-4af5-bf13-4b5f622c1342",
+            "publicKeyJwk": {
+                "kty": "OKP",
+                "crv": "X25519",
+                "x": "MCowBQYDK2VuAyEAr2YxmfKqR60/PzVWT7jTXC+ON0h5752fm33Sbh78P1Y="
+            }
+        },
+        {
+            "id": "did:web:did-web.godiddy.com:f06deae6-572f-4af5-bf13-4b5f622c1342#key-1",
+            "type": "JsonWebKey2020",
+            "controller": "did:web:did-web.godiddy.com:f06deae6-572f-4af5-bf13-4b5f622c1342",
+            "publicKeyJwk": {
+                "kty": "OKP",
+                "crv": "Ed25519",
+                "x": "MCowBQYDK2VwAyEATB+imf6AjRA2D9F52SYmBdIyn+pf3hPNxKFNBHAvegg="
+            }
+        }
+    ],
+    "service": [
+        {
+            "id": "#didcommrevocationmanager",
+            "type": "DIDCommMessaging",
+            "serviceEndpoint": "http://127.0.0.1:5000/receive-message"
+        }
+    ],
+    "id": "did:web:did-web.godiddy.com:f06deae6-572f-4af5-bf13-4b5f622c1342"
+}
